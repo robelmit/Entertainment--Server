@@ -8,7 +8,10 @@ const server = require('http').createServer(app);
 const joi = require('joi');
 const io = require('socket.io')(server);
 const bodyparser = require('body-parser')
-
+const cors = require('cors');
+const path = require('path')
+const upload = require('./routes/upload')
+const catagory = require('./routes/catagory')
 const robaye="this is a simple update on the app"
 
 app.use(cors());
